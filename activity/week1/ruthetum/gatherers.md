@@ -32,52 +32,57 @@
 
 ### fold
 ```java
-Stream<Integer> numbers = Stream.of(1, 2, 3, 4, 5);
+List<Integer> numbers = List.of(1, 2, 3, 4, 5);
+
 List<String> list = numbers.stream()
     .gather(Gatherers.fold(() -> "", (string, number) -> string + number))
     .toList();
 
-System.out.println(list); // [12345]
+assertEquals(List.of("12345"), list);
 ```
 
 ### scan
 ```java
-Stream<Integer> numbers = Stream.of(1, 2, 3, 4, 5);
+List<Integer> numbers = List.of(1, 2, 3, 4, 5);
+
 List<Integer> list = numbers.stream()
     .gather(Gatherers.scan(() -> 4, Integer::sum))
     .toList();
 
-System.out.println(list); // [5, 7, 10, 14, 19]
+assertEquals(List.of(4, 5, 7, 10, 14), list);
 ```
 
 ### windowFixed
 ```java
-Stream<Integer> numbers = Stream.of(1, 2, 3, 4, 5);
+List<Integer> numbers = List.of(1, 2, 3, 4, 5);
+
 List<List<Integer>> windows = numbers.stream()
                 .gather(Gatherers.windowFixed(2))
                 .toList();
 
-System.out.println(windows); // [[1, 2], [3, 4], [5]]
+assertEquals(List.of(List.of(1, 2), List.of(3, 4), List.of(5)), windows);
 ```
 
 ### windowSliding
 ```java
-Stream<Integer> numbers = Stream.of(1, 2, 3, 4, 5);
+List<Integer> numbers = List.of(1, 2, 3, 4, 5);
+
 List<List<Integer>> windows = numbers.stream()
         .gather(Gatherers.windowSliding(2))
         .toList();
 
-System.out.println(windows); // [[1, 2], [2, 3], [3, 4], [4, 5]]
+assertEquals(List.of(List.of(1, 2), List.of(2, 3), List.of(3, 4), List.of(4, 5)), windows);
 ```
 
 ### mapConcurrent
 ```java
-Stream<Integer> numbers = Stream.of(1, 2, 3, 4, 5);
+List<Integer> numbers = List.of(1, 2, 3, 4, 5);
+
 List<Integer> list = numbers.stream()
     .gather(Gatherers.mapConcurrent(1, number -> number * 2))
     .toList();
-  
-System.out.println(list); // [2, 4, 6, 8, 10]
+
+assertEquals(List.of(2, 4, 6, 8, 10), list);
 ```
 
 
