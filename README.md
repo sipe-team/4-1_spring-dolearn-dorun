@@ -9,7 +9,44 @@
 
 [//]: # (해줘)
 
-_TBD_
+<table align="center">
+    <th align="center">이윤준</th>
+    <th align="center">김세정</th>
+    <th align="center">김수빈</th>
+    <th align="center">장준환</th>
+    <tr>
+        <td align="center">
+            <a href="https://github.com/AntCode97"><img src="https://github.com/AntCode97.png" width="250"/></a>
+        </td>
+        <td align="center">
+            <a href="https://github.com/clean2001"><img src="https://github.com/clean2001.png" width="250"/></a>
+        </td>
+        <td align="center">
+            <a href="https://github.com/deeev-sb"><img src="https://github.com/deeev-sb.png" width="250"/></a>
+        </td>
+        <td align="center">
+            <a href="https://github.com/itsChrisJang"><img src="https://github.com/itsChrisJang.png" width="250"/></a>
+        </td>
+    </tr>
+	<th align="center">박영준</th>
+    <th align="center">김희동</th>
+    <th align="center">유지예</th>
+    <th align="center">윤영</th>
+	<tr>
+        <td align="center">
+            <a href="https://github.com/jun108059"><img src="https://github.com/jun108059.png" width="250"/></a>
+        </td>
+        <td align="center">
+            <a href="https://github.com/ruthetum"><img src="https://github.com/ruthetum.png" width="250"/></a>
+        </td>
+        <td align="center">
+            <a href="https://github.com/yujiyea"><img src="https://github.com/yujiyea.png" width="250"/></a>
+        </td>
+        <td align="center">
+            <a href="https://github.com/yunyoung1819"><img src="https://github.com/yunyoung1819.png" width="250"/></a>
+        </td>
+    </tr>
+</table>
 
 <br/>
 
@@ -29,14 +66,14 @@ _TBD_
 
 장소: 온라인 진행
 
-| 주차 |     일정      | 학습 주제                                                                                             |
-|:--:|:-----------:|:--------------------------------------------------------------------------------------------------|
-| 1  | 5.13 ~ 5.20 | • [Java Performance Update](https://www.youtube.com/watch?v=rXv2-lN5Xgk)<br/> • Java New Features | 
-| 2  | 5.20 ~ 5.27 | • Virtual threads                                                                                 |
-| 3  | 5.27 ~ 6.3  | • _TBD_                                                                                           |
-| 4  | 6.3 ~ 6.10  | • _TBD_                                                                                           |
-| 5  | 6.10 ~ 6.17 | • _TBD_                                                                                           |
-| 6  | 6.17 ~ 6.21 | • 회고 & 발표 준비                                                                                      |
+| 주차 |     일정      | 학습 주제                                                                                                                                           |
+|:--:|:-----------:|:------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1  | 5.13 ~ 5.20 | • [Java Performance Update](https://www.youtube.com/watch?v=rXv2-lN5Xgk)<br/> • [Stream Gatherers](https://www.youtube.com/watch?v=v_5SKpfkI2U) | 
+| 2  | 5.20 ~ 5.27 | • [Virtual Thread](https://www.youtube.com/watch?v=BZMZIM-n4C0)                                                                                                                           |
+| 3  | 5.27 ~ 6.3  | • _TBD_                                                                                                                                         |
+| 4  | 6.3 ~ 6.10  | • _TBD_                                                                                                                                         |
+| 5  | 6.10 ~ 6.17 | • _TBD_                                                                                                                                         |
+| 6  | 6.17 ~ 6.21 | • 회고 & 발표 준비                                                                                                                                    |
 
 
 <br/>
