@@ -2,10 +2,10 @@
 
 ## 표본
 
-- 제목: Java의 미래, Virtual Thread
-- 방송 사직: 우아한테크세미나 4월
-- 보기: [영상 연결고리](https://www.youtube.com/watch?v=BZMZIM-n4C0)
-- 발표자: 우한형제들 김태원 (파일서버 개발자)
+- 제목 : Java의 미래, Virtual Thread
+- 시기 : 우아한테크세미나 4월
+- 링크 : [영상 연결고리](https://www.youtube.com/watch?v=BZMZIM-n4C0)
+- 발표자: 우아한형제들 김태원님
 
 ---
 
@@ -16,13 +16,13 @@
 
 ---
 
-## 운원방식이 다른 Virtual Thread 가격 점
+## 운영방식이 다른 Virtual Thread
 
 ### 1. 느리지 않은 생성/스케줄 비용
 
 - **Thread Pool 사용 필요 X**
-    - 기존 자바 Thread: OS 스레드를 만들기 위해 무거운 System Call 이 발생
-    - **Virtual Thread**: JVM 내 스케줄링 되어 OS 가 도움을 안 쓰면 됨
+    - 기존 자바 Thread: OS 스레드를 만들기 위해 무거운 System Call 이 발생함
+    - **Virtual Thread**: JVM 내로 스케줄링 되기 떄문에 OS 가 도움을 안 쓰면 됨
 
 ```java
 // 기존 Thread
@@ -54,7 +54,7 @@ Thread vt = Thread.startVirtualThread(() -> {});
 
 ### 3. 기존 Java 앱과 100%확인 호환
 
-- `Thread`, `Runnable`, `ExecutorService` 등과 그대로 원하는 대요:
+- `Thread`, `Runnable`, `ExecutorService` 등과 그대로 원하는 대로
 
 ```java
 ExecutorService executor = Executors.newVirtualThreadPerTaskExecutor();
