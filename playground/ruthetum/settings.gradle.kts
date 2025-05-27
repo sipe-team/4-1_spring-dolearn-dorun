@@ -2,6 +2,7 @@ rootProject.name = "dolearn"
 
 include(
     "practice:gatherers",
+    "sse",
 )
 
 pluginManagement {

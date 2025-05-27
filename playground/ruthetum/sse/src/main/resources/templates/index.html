@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<script>
+    const sse = new EventSource("http://localhost:8080/price/recent");
+
+    sse.addEventListener('message', (e) => {
+        console.log('receive message: ', e.data);
+        // price span 요소에 데이터 표시
+        const priceElement = document.getElementById('price');
+        if (priceElement) {
+            priceElement.textContent = e.data;
+        }
+    });
+</script>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crypto Price</title>
+</head>
+
+<body>
+    <h2>Crypto Price</h2>
+    <span id="price">대기중...</span>
+</body>
+
+</html>
