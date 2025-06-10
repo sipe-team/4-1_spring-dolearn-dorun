@@ -1,6 +1,7 @@
 rootProject.name = "dolearn"
 
 include(
+    "distributed-lock",
     "practice:gatherers",
     "sse",
 )
